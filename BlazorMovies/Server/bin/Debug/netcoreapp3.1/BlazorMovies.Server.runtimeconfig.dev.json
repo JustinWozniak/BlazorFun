@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Rocka\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Rocka\\.nuget\\packages"
+    ]
+  }
+}
