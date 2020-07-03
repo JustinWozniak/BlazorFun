@@ -370,6 +370,6 @@ C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstanda
 C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\Razor\Shared\MoviesList.razor.g.cs
 C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\RazorDeclaration\Shared\IndividualMovie.razor.g.cs
 C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\Razor\Shared\IndividualMovie.razor.g.cs
-C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\integrity\EKkPPnQnA8XIJjNLbKcWtzhijl4H1PRucZIfr7G-Pr8=.hash
-C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\integrity\k7godYqj2QwoZ36SCxUHGTiKnL5jLKsbAiCk4cYnsls=.hash
-C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\integrity\NXdqQvug_WouOgNBNVrZHJzCyPTRLImzwVRlWfep3B0=.hash
+C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\integrity\xl-JDU_0YmXpn8AGLXnarDTpAESZ2DOFEhHWPXgycys=.hash
+C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\integrity\uZ7N9rtoS3ojxcWBtAjULMMDtsv7DPCs1dFpB1a93kQ=.hash
+C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\obj\Debug\netstandard2.1\integrity\94ta3tsWglPIc9K_6Irgx6E6BX-wvC07DdaXRD0rwU8=.hash
