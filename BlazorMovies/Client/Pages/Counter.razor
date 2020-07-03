@@ -1,20 +1,24 @@
 ﻿@page "/counter"
 
 <h1>Counter</h1>
-<MoviesList />
-<MoviesList />
-<MoviesList />
+<MoviesList Movies="movies"/>
 <MoviesList />
 
-<p>Current count: @currentCount</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+
 
 @code {
-    private int currentCount = 0;
-
-    private void IncrementCount()
+    private List<Movie> movies;
+    protected override void OnInitialized()
     {
-        currentCount++;
+
+        movies = new List<Movie>()
+{
+            new Movie(){Title = "Charlie", RealeaseDate = new DateTime(2019,2,2)},
+              new Movie(){Title = "South Park Movie", RealeaseDate = new DateTime(2013,2,2)},
+                new Movie(){Title = "Blow", RealeaseDate = new DateTime(1987,2,2)},
+
+        };
     }
+
 }

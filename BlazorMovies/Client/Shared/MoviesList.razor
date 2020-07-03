@@ -1,33 +1,22 @@
-﻿@if (movies == null)
+﻿@if (Movies == null)
 {
    <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" />
 }
-else if (movies.Count == 0)
+else if (Movies.Count == 0)
 {
     <text>There are no movies to show</text>
 }
 else
 {
-    @foreach (var movie in movies)
+    @foreach (var movie in Movies)
     {
 
-        <p>Title: <b>@movie.Title</b></p>
-        <p>Release Date: <b>@movie.RealeaseDate.ToString("dd MMM yyy")</b></p>
+        <IndividualMovie Movie="movie" />
     }
 }
 
 @code {
-    List<Movie> movies;
+        [Parameter] public List<Movie> Movies{ get; set; }
 
-    protected async override Task OnInitializedAsync()
-    {
-        await Task.Delay(3000);
-        movies = new List<Movie>()
-{
-            new Movie(){Title = "Jumanji", RealeaseDate = new DateTime(2019,2,2)},
-              new Movie(){Title = "Jurrasic Park", RealeaseDate = new DateTime(2013,2,2)},
-                new Movie(){Title = "Jaws", RealeaseDate = new DateTime(1987,2,2)},
-
-        };
-    }
+  
 }
