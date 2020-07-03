@@ -77,6 +77,20 @@ using BlazorMovies.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+using BlazorMovies.Client.Helper;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 11 "C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\_Imports.razor"
+using BlazorMovies.Shared.Entities;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Client\Pages\FetchData.razor"
 using BlazorMovies.Shared;
 
