@@ -19,7 +19,7 @@
     @for (var i = 0; i < movies.Count; i++)
     {
         <div style="background-color: @(i % 2 == 0 ? "blue" : "red")">
-            <p> @(i + 1)) Title:<b>@movies[i].Title</b></p>
+            <p> @(i + 1)) Title:@((MarkupString) movies[i].Title)</p>
             <p>Release Date: <b>@movies[i].RealeaseDate.ToString("dd MMM yyy")</b></p>
         </div>
     }
@@ -35,8 +35,8 @@
     {
         movies = new List<Movie>()
 {
-            new Movie(){Title = "Jumanji", RealeaseDate = new DateTime(2019,2,2)},
-              new Movie(){Title = "Jurrasic Park", RealeaseDate = new DateTime(2013,2,2)},
+            new Movie(){Title = "<b>Jumanji</b>", RealeaseDate = new DateTime(2019,2,2)},
+              new Movie(){Title = "<i>Jurrasic Park</i>", RealeaseDate = new DateTime(2013,2,2)},
                 new Movie(){Title = "Jaws", RealeaseDate = new DateTime(1987,2,2)},
 
         };
