@@ -1,24 +1,25 @@
 ﻿@page "/"
 
 
-    <div>
-        <h3>Movies:</h3>
-       <MoviesList Movies="movies" />
+<div>
+    <h3>Movies:</h3>
+    <MoviesList Movies="movies">
+        <NullTemplate>
+            <span style="color:red">This is Loading</span>
+        </NullTemplate>
+        <EmptyTemplate>
+            <span style="color:blue">No records to see</span>
+        </EmptyTemplate>
+    </MoviesList>
 
-    </div>
+</div>
 
 
 @code{
-    private List<Movie> movies;
+    private List<Movie> movies = new List<Movie>();
     protected override void OnInitialized()
     {
 
-        movies = new List<Movie>()
-{
-            new Movie(){Title = "Jumanji", RealeaseDate = new DateTime(2019,2,2)},
-              new Movie(){Title = "Jurrasic Park", RealeaseDate = new DateTime(2013,2,2)},
-                new Movie(){Title = "Jaws", RealeaseDate = new DateTime(1987,2,2)},
 
-        };
     }
 }

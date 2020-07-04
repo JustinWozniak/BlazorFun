@@ -1,9 +1,25 @@
 ﻿@if (Movies == null)
 {
-    <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" />
+
+    @if (NullTemplate != null)
+    {
+        @NullTemplate;
+    }
+    else
+    {
+        <img src="https://media0.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif" />
+    }
 }
 else if (Movies.Count == 0)
 {
+    @if (EmptyTemplate != null)
+    {
+        @EmptyTemplate;
+    }
+    else
+    {
+        <text>There are no records to show</text>
+    }
     <text>There are no movies to show</text>
 }
 else
@@ -22,6 +38,8 @@ else
 @code {
     [Parameter] public List<Movie> Movies { get; set; }
     bool displayButtons = true;
+    [Parameter] public RenderFragment NullTemplate { get; set; }
+    [Parameter] public RenderFragment EmptyTemplate { get; set; }
 
     private void DeleteMovie(Movie movie)
     {
