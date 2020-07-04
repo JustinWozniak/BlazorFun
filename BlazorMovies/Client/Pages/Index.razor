@@ -4,22 +4,23 @@
 <div>
     <h3>Movies:</h3>
     <MoviesList Movies="movies">
-        <NullTemplate>
-            <span style="color:red">This is Loading</span>
-        </NullTemplate>
-        <EmptyTemplate>
-            <span style="color:blue">No records to see</span>
-        </EmptyTemplate>
+
     </MoviesList>
 
 </div>
 
 
 @code{
-    private List<Movie> movies = new List<Movie>();
-    protected override void OnInitialized()
+    private List<Movie> movies;
+    protected async override Task OnInitializedAsync()
     {
 
-
+        await Task.Delay(2000);
+        movies = new List<Movie>()
+{
+            new Movie(){Title = "Charlie", RealeaseDate = new DateTime(2019,2,2)},
+              new Movie(){Title = "South Park Movie", RealeaseDate = new DateTime(2013,2,2)},
+                new Movie(){Title = "Blow", RealeaseDate = new DateTime(1987,2,2)},
+        };
     }
 }
