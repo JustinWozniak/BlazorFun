@@ -18,7 +18,6 @@ namespace AspNetCore
         #pragma warning disable 1998
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
-#nullable restore
 #line 3 "C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Server\Pages\Error.cshtml"
   
     Layout = "_Layout";
@@ -26,32 +25,25 @@ namespace AspNetCore
 
 #line default
 #line hidden
-#nullable disable
             WriteLiteral("\r\n<h1 class=\"text-danger\">Error.</h1>\r\n<h2 class=\"text-danger\">An error occurred while processing your request.</h2>\r\n\r\n");
-#nullable restore
 #line 11 "C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Server\Pages\Error.cshtml"
  if (Model.ShowRequestId)
 {
 
 #line default
 #line hidden
-#nullable disable
             WriteLiteral("    <p>\r\n        <strong>Request ID:</strong> <code>");
-#nullable restore
 #line 14 "C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Server\Pages\Error.cshtml"
                                       Write(Model.RequestId);
 
 #line default
 #line hidden
-#nullable disable
             WriteLiteral("</code>\r\n    </p>\r\n");
-#nullable restore
 #line 16 "C:\Users\Rocka\source\repos\BlazorMovies\BlazorMovies\Server\Pages\Error.cshtml"
 }
 
 #line default
 #line hidden
-#nullable disable
             WriteLiteral(@"
 <h3>Development Mode</h3>
 <p>
