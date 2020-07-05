@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "fXMXG1+S13pcNlLGnht67lWRATSPXAuJiE+RSf7qFyY1pSct5b3lLfIccCf9Yot7j2+q6xaCKcgyyn9yW5hiIw==",
+  "dgSpecHash": "GMuhKqiyX5F7vqLpJUIV2J8rSK2z9zPO0fpYAtj/dhNXXCtP6ttM61Yps4YY0gf79m6lbLURjY0a0KKjQsw0LA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rocka\\source\\repos\\BlazorMovies\\BlazorMovies\\Shared\\BlazorMovies.Shared.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Rocka\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\Rocka\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Rocka\\.nuget\\packages\\system.componentmodel.annotations\\4.6.0\\system.componentmodel.annotations.4.6.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -143,7 +143,7 @@
           "System.Collections.Immutable": "1.2.5.0",
           "System.Collections.NonGeneric": "4.1.2.0",
           "System.Collections.Specialized": "4.1.2.0",
-          "System.ComponentModel.Annotations": "4.3.1.0",
+          "System.ComponentModel.Annotations.Reference": "4.3.1.0",
           "System.ComponentModel.DataAnnotations": "4.0.0.0",
           "System.ComponentModel": "4.0.4.0",
           "System.ComponentModel.EventBasedAsync": "4.1.2.0",
@@ -296,6 +296,17 @@
           "BlazorMovies.Server.dll": {}
         }
       },
+      "Markdig/0.20.0": {
+        "runtime": {
+          "lib/netcoreapp3.1/Markdig.dll": {
+            "assemblyVersion": "0.20.0.0",
+            "fileVersion": "0.20.0.0"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Markdig.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Authorization/3.1.3": {
         "dependencies": {
           "Microsoft.AspNetCore.Metadata": "3.1.3",
@@ -403,6 +414,17 @@
         },
         "compile": {
           "lib/netcoreapp3.1/Microsoft.AspNetCore.Metadata.dll": {}
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.19.56404"
+          }
+        },
+        "compile": {
+          "ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll": {}
         }
       },
       "Microsoft.Extensions.Configuration/3.1.3": {
@@ -621,6 +643,7 @@
           "lib/netstandard2.1/Microsoft.JSInterop.WebAssembly.dll": {}
         }
       },
+      "System.ComponentModel.Annotations/4.6.0": {},
       "System.Net.Http.Json/3.2.0": {
         "dependencies": {
           "System.Text.Json": "4.7.1"
@@ -646,11 +669,28 @@
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
       },
+      "Tewr.Blazor.FileReader/1.5.0.20109": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "3.1.3",
+          "Microsoft.Bcl.AsyncInterfaces": "1.1.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Blazor.FileReader.dll": {
+            "assemblyVersion": "1.5.0.20109",
+            "fileVersion": "1.5.0.20109"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Blazor.FileReader.dll": {}
+        }
+      },
       "BlazorMovies.Client/1.0.0": {
         "dependencies": {
           "BlazorMovies.Shared": "1.0.0",
+          "Markdig": "0.20.0",
           "Microsoft.AspNetCore.Components.WebAssembly": "3.2.0",
-          "System.Net.Http.Json": "3.2.0"
+          "System.Net.Http.Json": "3.2.0",
+          "Tewr.Blazor.FileReader": "1.5.0.20109"
         },
         "runtime": {
           "BlazorMovies.Client.dll": {}
@@ -660,6 +700,9 @@
         }
       },
       "BlazorMovies.Shared/1.0.0": {
+        "dependencies": {
+          "System.ComponentModel.Annotations": "4.6.0"
+        },
         "runtime": {
           "BlazorMovies.Shared.dll": {}
         },
@@ -1363,7 +1406,7 @@
         },
         "compileOnly": true
       },
-      "System.ComponentModel.Annotations/4.3.1.0": {
+      "System.ComponentModel.Annotations.Reference/4.3.1.0": {
         "compile": {
           "System.ComponentModel.Annotations.dll": {}
         },
@@ -2241,6 +2284,13 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Markdig/0.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-49Kuof5GSRdTnXlDvZ/+ucABl9l5oPA/jpIkFK8Zcnc0NiETj+rf5f4xoNr52a4Hs1DlcJmrRHv4xvZHMxnDFQ==",
+      "path": "markdig/0.20.0",
+      "hashPath": "markdig.0.20.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Authorization/3.1.3": {
       "type": "package",
       "serviceable": true,
@@ -2303,6 +2353,13 @@
       "sha512": "sha512-m1UZ8bG3afONRjbiWxHXq3ILcaKV/SPWHJdDQh+fKTTAXuyjE7bQ4K13hhMSHTUlxqMHr0VqeDlo9I7nqgSEqw==",
       "path": "microsoft.aspnetcore.metadata/3.1.3",
       "hashPath": "microsoft.aspnetcore.metadata.3.1.3.nupkg.sha512"
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Am6l4Vpn3/K32daEqZI+FFr96OlZkgwK2LcT3pZ2zWubR5zTPW3/FkO1Rat9kb7oQOa4rxgl9LJHc5tspCWfg==",
+      "path": "microsoft.bcl.asyncinterfaces/1.1.0",
+      "hashPath": "microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512"
     },
     "Microsoft.Extensions.Configuration/3.1.3": {
       "type": "package",
@@ -2416,6 +2473,13 @@
       "path": "microsoft.jsinterop.webassembly/3.2.0",
       "hashPath": "microsoft.jsinterop.webassembly.3.2.0.nupkg.sha512"
     },
+    "System.ComponentModel.Annotations/4.6.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-pOd+UhZ3X8xfwKDlgAzowUJNjp8VYVmOHZm++vCd0kq1HZ0zK3mNo2yRXjYgv7Ik/Xi43fmJfND2PLEsQSALCg==",
+      "path": "system.componentmodel.annotations/4.6.0",
+      "hashPath": "system.componentmodel.annotations.4.6.0.nupkg.sha512"
+    },
     "System.Net.Http.Json/3.2.0": {
       "type": "package",
       "serviceable": true,
@@ -2429,6 +2493,13 @@
       "sha512": "sha512-XwzMbct3iNepJaFylN1+l8weWlFburEzXidqleSsLvSXdHSIJHEKtRVKHPlpWcFmJX6k3goPFfVgUfp40RR+bg==",
       "path": "system.text.json/4.7.1",
       "hashPath": "system.text.json.4.7.1.nupkg.sha512"
+    },
+    "Tewr.Blazor.FileReader/1.5.0.20109": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9JHZCdUlX7elh1493aDgkAc09BHJPUho6Bqox0+yL+DIqnU1f/U5FkYm11vdvM60+AYZcMZApJBF8t5BhdzzUA==",
+      "path": "tewr.blazor.filereader/1.5.0.20109",
+      "hashPath": "tewr.blazor.filereader.1.5.0.20109.nupkg.sha512"
     },
     "BlazorMovies.Client/1.0.0": {
       "type": "project",
@@ -3020,7 +3091,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "System.ComponentModel.Annotations/4.3.1.0": {
+    "System.ComponentModel.Annotations.Reference/4.3.1.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,5 @@
-﻿using BlazorMovies.Client.Helpers;
+﻿using Blazor.FileReader;
+using BlazorMovies.Client.Helpers;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using System;
@@ -19,9 +20,10 @@ namespace BlazorMovies.Client
             await builder.Build().RunAsync();
         }
 
-        public static void ConfigureServices(IServiceCollection services)
+        private static void ConfigureServices(IServiceCollection services)
         {
             services.AddTransient<IRepository, RepositoryInMemory>();
+            services.AddFileReaderService(options => options.InitializeOnFirstCall = true);
         }
     }
 
