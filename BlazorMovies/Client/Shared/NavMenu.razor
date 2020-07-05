@@ -19,19 +19,33 @@
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+                <span class="" aria-hidden="true"></span> Fetch data
             </NavLink>
         </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="genres">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Genres
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="people">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> People
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="movies/create">
+                <span class="oi oi-list-rich" aria-hidden="true"></span> Create a Movie
+            </NavLink>
+        </li>
+
     </ul>
 </div>
 
-@code {
-    private bool collapseNavMenu = true;
+@code { private bool collapseNavMenu = true;
 
-    private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+            private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
-}
+            private void ToggleNavMenu()
+            {
+                collapseNavMenu = !collapseNavMenu;
+            } }

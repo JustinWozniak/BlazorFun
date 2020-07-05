@@ -1,9 +1,9 @@
-﻿using System;
-using System.Net.Http;
-using System.Threading.Tasks;
-using BlazorMovies.Client.Helpers;
+﻿using BlazorMovies.Client.Helpers;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
+using System;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace BlazorMovies.Client
 {
@@ -19,10 +19,8 @@ namespace BlazorMovies.Client
             await builder.Build().RunAsync();
         }
 
-        private static void ConfigureServices(IServiceCollection services)
+        public static void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<SingletonService>();
-            services.AddTransient<TransientService>();
             services.AddTransient<IRepository, RepositoryInMemory>();
         }
     }
