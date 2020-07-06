@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BvBFws/zdY++jMKSCojve1Ck/+xVdBtwqo8B0UhCaMZ/cBnypL2Rn+O6WDsqc8hJLT5f0mY6EPWDtLnnn++Jaw==",
+  "dgSpecHash": "3z5f/nITLMNHa/67uCwc0Q7spZOmR3n2e14EQeV/bkqRXTyiipfCfeSgadV3m90yKdqk09IDZRDIh3cbkYHdVA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Rocka\\source\\repos\\BlazorMovies\\BlazorMovies\\Client\\BlazorMovies.Client.csproj",
   "expectedPackageFiles": [
@@ -8,9 +8,11 @@
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.authorization\\3.1.3\\microsoft.aspnetcore.authorization.3.1.3.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components\\3.1.3\\microsoft.aspnetcore.components.3.1.3.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.analyzers\\3.1.3\\microsoft.aspnetcore.components.analyzers.3.1.3.nupkg.sha512",
+    "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.authorization\\3.1.3\\microsoft.aspnetcore.components.authorization.3.1.3.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.forms\\3.1.3\\microsoft.aspnetcore.components.forms.3.1.3.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.web\\3.1.3\\microsoft.aspnetcore.components.web.3.1.3.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\3.2.0\\microsoft.aspnetcore.components.webassembly.3.2.0.nupkg.sha512",
+    "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.authentication\\3.2.0\\microsoft.aspnetcore.components.webassembly.authentication.3.2.0.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.build\\3.2.0\\microsoft.aspnetcore.components.webassembly.build.3.2.0.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.devserver\\3.2.0\\microsoft.aspnetcore.components.webassembly.devserver.3.2.0.nupkg.sha512",
     "C:\\Users\\Rocka\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly.httphandler\\3.2.0\\microsoft.aspnetcore.components.webassembly.httphandler.3.2.0.nupkg.sha512",

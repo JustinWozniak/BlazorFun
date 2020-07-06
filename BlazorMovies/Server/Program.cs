@@ -15,7 +15,7 @@ namespace BlazorMovies.Server
             WebHost.CreateDefaultBuilder(args)
                 .UseConfiguration(new ConfigurationBuilder()
                     .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true)
-                    .AddCommandLine(args)
+                .AddCommandLine(args)
                     .Build())
                 .UseStartup<Startup>()
                 .Build();

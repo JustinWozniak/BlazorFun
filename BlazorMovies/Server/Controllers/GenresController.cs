@@ -1,4 +1,6 @@
 ﻿using BlazorMovies.Shared.Entities;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -10,7 +12,8 @@ namespace BlazorMovies.Server.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class GenresController: ControllerBase
+    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme, Roles = "Admin")]
+    public class GenresController : ControllerBase
     {
         private readonly ApplicationDbContext context;
 
@@ -20,6 +23,7 @@ namespace BlazorMovies.Server.Controllers
         }
 
         [HttpGet]
+        [AllowAnonymous]
         public async Task<ActionResult<List<Genre>>> Get()
         {
             return await context.Genres.ToListAsync();
